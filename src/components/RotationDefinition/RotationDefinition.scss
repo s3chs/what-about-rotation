@@ -1,0 +1,24 @@
+.rotation-definition-section {
+  padding: 1vh 4vw;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .rotation-definition-text-container {
+
+    p {
+      font-size: 2em;
+      text-align: justify;
+      padding-bottom: 2vw;
+      line-height: 4vw;
+      letter-spacing: 0.10vw;
+
+      &:first-child {
+        text-transform: uppercase;
+        font-size: 2.5em;
+      }
+    }
+  }
+}

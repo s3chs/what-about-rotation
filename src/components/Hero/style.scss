@@ -1,0 +1,127 @@
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .hero-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Monument Extended", sans-serif;
+    text-transform: uppercase;
+
+    .hero-text {
+      z-index: 5;
+
+      &:nth-child(1) p {
+        font-size: 4em;
+      }
+
+      &:nth-child(2) p {
+        font-size: 5em;
+        color: #edede9;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+
+      span {
+        display: inline-block;
+        font-size: 6em;
+        font-weight: bold;
+
+        &:last-child {
+          color: #edede9;
+          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+          mix-blend-mode: difference;
+        }
+      }
+    }
+  }
+}
+
+
+.hero-details {
+  position: absolute;
+  left: -400px;
+  bottom: 0;
+  transform: rotate(-90deg);
+  padding: 10px;
+}
+
+.hero-details p {
+  letter-spacing: 3px;
+}
+
+.hero-details p::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 110%;
+  background-color: black;
+  margin: 15px;
+}
+
+.hero-visual {
+  opacity: 1;
+  position: absolute;
+  right: -33%;
+  top: -65%;
+  height: 650px;
+  width: 300px;
+  background: url("https://cdn.nba.com/teams/legacy/www.nba.com/bulls/sites/bulls/files/jordan_vs_indiana.jpg") 50% 50% / cover;
+  transition: all 0.5s;
+}
+
+.arrow-btn {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.long-arrow-left {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%) rotate(-135deg);
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  z-index: 1;
+  transition: all 0.4s ease-in-out;
+}
+
+.long-arrow-left-overlay {
+  position: relative;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 4;
+  transition: all 0.9s ease;
+}
+
+.arrow-btn:hover .long-arrow-left {
+  border-color: white;
+  z-index: 4;
+}
+
+.arrow-btn:hover .long-arrow-left-overlay {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}

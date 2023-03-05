@@ -1,0 +1,14 @@
+.gallery-section-container {
+  padding: 1vh 4vw;
+  z-index: 10;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery-section-container .gallery-title {
+  font-family: "Monument Extended", sans-serif;
+  font-size: 3.5em;
+  letter-spacing: 0.05px;
+  padding-bottom: 2vw;
+}
+
+/*# sourceMappingURL=style.css.map */

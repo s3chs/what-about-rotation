@@ -1,0 +1,32 @@
+.gallery-item-container {
+  min-height: 250vh;
+  width: 100%;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-gap: 20px;
+  overflow: hidden;
+
+  .gallery-logo-container {
+    grid-area: 5/3/7/4;
+    display: grid;
+
+    .gallery-logo {
+      place-self: center;
+      word-wrap: break-word;
+      font-family: "Monument Extended", sans-serif;
+      font-weight: normal;
+      text-transform: uppercase;
+      font-size: 1.5vw;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .gallery-item-wrapper {
+    .gallery-item {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

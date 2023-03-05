@@ -1,0 +1,29 @@
+
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Monument Extended", sans-serif;
+  height: 13vh;
+  width: 100vw;
+  z-index: 13;
+
+  .logo, ul {
+    padding: 0 4vw;
+    letter-spacing: 0.05em;
+  }
+
+  .logo {
+    font-size: 3em;
+  }
+
+  ul {
+    li {
+      font-size: 1.3em;
+      display: inline-block;
+      padding-left: 20px;
+    }
+  }
+}
